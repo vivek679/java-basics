@@ -55,7 +55,6 @@ public class ArrayQuestions {
 		System.out.println("bubble");
 		obj.bubbleSort(arr5,arr5.length);
 		
-		
 		System.out.println();
 		System.out.println("dynamicProblem");
 		int arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
@@ -63,8 +62,6 @@ public class ArrayQuestions {
 	}
 
 	private static Integer minimumJumpToReachEnd(int[] arr, int n) {
-		// TODO Auto-generated method stub
-		// 
 		int[] minimumJumpArray = new int[n]; // store the actual jump count
 		int[] jumpPathArray = new int[n]; // stores the index of previous element
 		
@@ -85,7 +82,6 @@ public class ArrayQuestions {
 					break;
 				}
 			}
-			
 		}
 		System.out.println();
 		System.out.println("jumpPathArray :"+jumpPathArray.toString());
@@ -127,7 +123,6 @@ public class ArrayQuestions {
 
 	private void insertionSort(int[] arr, int length) {
 		System.out.println("Sorted array : ");
-		
 		for(int i=1; i<length; i++)
 		{
 			int key = arr[i];
@@ -146,7 +141,6 @@ public class ArrayQuestions {
 	}
 
 	private void sortMethod1(int[] arr3, int length) {
-		// TODO Auto-generated method stub
 		System.out.println("Sorted array : ");
 		Arrays.sort(arr3);
 		for(int i:arr3)
@@ -156,7 +150,6 @@ public class ArrayQuestions {
 	}
 	
 	private void sortMethod2(int[] arr3, int length) {
-		// TODO Auto-generated method stub
 		Integer[] integerArray = Arrays.stream(arr3).boxed().toArray(Integer[] :: new);
 		Arrays.sort(integerArray, Collections.reverseOrder());
 		System.out.println("Sorted array : ");
@@ -164,7 +157,6 @@ public class ArrayQuestions {
 		{
 			System.out.print(i +" ");
 		}
-		
 	}
 
 	public void merge(int arr1[], int arr2[], int n, int m) {
@@ -176,7 +168,6 @@ public class ArrayQuestions {
 			} else {
 				System.out.print(arr2[j++] + " ");
 			}
-
 		}
 		while (i < n) {
 			System.out.print(arr1[i++] + " ");
